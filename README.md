@@ -3,13 +3,19 @@ Code for the paper: "Angular Super-Resolution in X-Ray Projection Radiography Us
 NOTE: This code is not intended for clinical use.
 
 ## Prerequisites
-numpy==1.18.3\\
-Pillow==6.1.0\\
-pydicom==1.4.2\\
-six==1.14.0\\
-torch==1.4.0\\
-torchvision==0.5.0\\
-tqdm==4.45.0\\
+numpy==1.18.3
+
+Pillow==6.1.0
+
+pydicom==1.4.2
+
+six==1.14.0
+
+torch==1.4.0
+
+torchvision==0.5.0
+
+tqdm==4.45.0
 
 ## Training
 ### Preparing training data
