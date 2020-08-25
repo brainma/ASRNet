@@ -31,7 +31,7 @@ Testing data folder: dataset/test/patientID/imgX.dcm
 
 Testing data label folder: dataset/test/patientID/label/imgX.dcm
 
-Where the "X" is frame number.
+Where the "X" is frame serial number.
 
 ### Command
 ```bash
