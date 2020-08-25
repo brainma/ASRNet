@@ -16,9 +16,10 @@ tqdm==4.45.0
 In order to train your own model using the provided code with your own dataset, the data needs to be formatted in a certain file structure. 
 The data should follow the format: 
 Training data folder: dataset/train/patientID/imgX.dcm
-Validation data folder: dataset/validation/patientID/imgx.dcm
-Testing data folder: dataset/test/patientID/imgx.dcm
-Testing data label folder: dataset/test/patientID/label/imgx.dcm
+Validation data folder: dataset/validation/patientID/imgX.dcm
+Testing data folder: dataset/test/patientID/imgX.dcm
+Testing data label folder: dataset/test/patientID/label/imgX.dcm
+where the "X" is frame number.
 
 ### Command
 ```bash
@@ -27,8 +28,9 @@ python train.py --dataset_root path\to\dataset --checkpoint_dir path\to\save\che
 
 ## Testing
 ```bash
-python run_test.py --inFolder path\to\test_dataset --checkpoint path\to\save\checkpoints\ASRNETx.ckpt --labelFolder path\to\labelFolder --infer_num numberOfIntermediateFrame
+python run_test.py --inFolder path\to\test_dataset --checkpoint path\to\save\checkpoints\ASRNETX.ckpt --labelFolder path\to\labelFolder --infer_num numberOfIntermediateFrame
 ```
+where the "X" is epoch number.
 
 ## Run the following commmand for help / more options
 ```bash
@@ -41,3 +43,4 @@ python run_test.py --h
 ```bash
 tensorboard --logdir log --port 6007
 ```
+Then link to https://localhost:6007
